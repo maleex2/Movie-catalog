@@ -44,8 +44,8 @@ const handleOnChange = (e) => {
   return (
     <>
       <header>
+        <h1>The Movie Catalog</h1>
         <form onSubmit={handleOnSubmit}>
-          
         <input 
         type="search" 
         placeholder="Search" 
