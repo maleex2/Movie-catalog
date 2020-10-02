@@ -33,6 +33,12 @@ header{
   padding: 0.5rem 1.5rem;
 }
 
+@media only screen and (max-width:480px){
+  .search {
+    width: 30%;
+  }
+}
+
 .search:focus {
   outline: 0;
 }
