@@ -19,6 +19,7 @@ body {
 
 header{
   background-color: #373b69;
+  background-image: url(bg.jpg);
   padding: 1rem;
   justify-content: flex-end; 
   display: flex;
