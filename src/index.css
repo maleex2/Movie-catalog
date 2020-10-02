@@ -48,9 +48,9 @@ header{
 
 @media only screen and (max-width:680px){
   .search {
-    width: 50%;
+    width: 70%;
     font-size: 0.7rem;
-    margin: 2rem;
+    margin: 2.5rem;
     font-size: 1.3rem;
   }
   header h1{
