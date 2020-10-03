@@ -1,7 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+# The Movie Catalog
 
 [Live Demo](https://tender-neumann-cd156a.netlify.app/).
+
+### A react app using [The Movie Database](https://www.themoviedb.org/)'s API to search and browse milions of movies, TV shows and people.
+
+
 
 
 ## Available Scripts
