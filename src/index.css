@@ -153,15 +153,15 @@ h1 {
 }
 
 .nav{
-  background: #59adeb;
+  background: #3990ce;
   /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #59adeb 0%, #42c2b5 52%, #373b69 100%);
+  background: -moz-linear-gradient(-45deg, #4492c9ce 0%, #42c2b5 52%, #373b69 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #59adeb 0%, #42c2b5 52%, #373b69 100%);
+  background: -webkit-linear-gradient(-45deg, #4492c9ce 0%, #42c2b5 52%, #373b69 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #59adeb 0%, #42c2b5 52%, #373b69 100%);
+  background: linear-gradient(135deg, #4492c9ce 0%, #42c2b5 52%, #373b69 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#59adeb', endColorstr='#373b69', GradientType=1);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#4492c9ce', endColorstr='#373b69', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
   background-size: 350% 350%;
   animation: waveColors 8s ease infinite;
