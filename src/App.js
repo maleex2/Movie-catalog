@@ -43,8 +43,10 @@ const handleOnChange = (e) => {
 
   return (
     <>
+    <div className="nav">
+      <h1>The Movie Catalog</h1>
       <header>
-        <h1>The Movie Catalog</h1>
+        
         <form onSubmit={handleOnSubmit}>
         <input 
         type="search" 
@@ -55,6 +57,7 @@ const handleOnChange = (e) => {
         />
         </form>
       </header>
+    </div>
     <div className="movie-container">
       {movies.length > 0 && movies.map((movie) => (
         <Movie key={movie.id} {...movie}/>
