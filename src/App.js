@@ -63,6 +63,26 @@ const handleOnChange = (e) => {
         <Movie key={movie.id} {...movie}/>
       ))}
     </div>
+    <footer className="footer">
+      <a href="mailto:kyhar70@gmail.com" className="footer__link">Portfolio link</a>
+      <ul className="social-list">
+        <li className="social-list__item">
+          <a className="social-list__link" href="">
+            <FaLinkedinIn />
+          </a>
+        </li>
+        <li className="social-list__item">
+          <a className="social-list__link" href="">
+          <AiOutlineMail />
+          </a>
+        </li>
+        <li className="social-list__item">
+          <a className="social-list__link" href="">
+          <FaGithub />
+          </a>
+        </li>
+      </ul>
+    </footer>
   </>
   );
 }
