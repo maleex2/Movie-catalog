@@ -25,6 +25,10 @@ body {
   top:25%;
 }
 
+ul{
+padding: 0;
+}
+
 .leftside li{
   list-style: none;
   
