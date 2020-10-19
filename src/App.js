@@ -21,6 +21,17 @@ const SEARCH_API = "https://api.themoviedb.org/3/search/movie?&api_key=0aa562e51
 function App() {
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState('');
+  
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [open, setOpen] = useState(false);
+  const [placement, setPlacement] = useState();
+  
+
+  const handleClick = (newPlacement) => (event) => {
+    setAnchorEl(event.currentTarget);
+    setOpen((prev) => placement !== newPlacement || !prev);
+    setPlacement(newPlacement);
+  };
  
 
   useEffect(() => {
