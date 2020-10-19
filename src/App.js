@@ -1,4 +1,7 @@
 import React, {useEffect, useState} from 'react';
+import { FaLinkedinIn , FaGithub } from 'react-icons/fa';
+import {  AiOutlineProfile, AiOutlineMail} from 'react-icons/ai';
+import {  CgProfile} from 'react-icons/cg';
 
 
 import Movie from './components/Movie'
