@@ -2,7 +2,9 @@
 
 ## [Live Demo](https://tender-neumann-cd156a.netlify.app/).
 
-###### A react app using [The Movie Database](https://www.themoviedb.org/)'s API to search and browse milions of movies, TV shows and people.
+###### An app using [The Movie Database](https://www.themoviedb.org/)'s API to search and browse milions of movies, TV shows and celebrities.
+###### The app is created using React, Material-UI and hooks
+###### Simply type in the search box and hit Enter
 
 
 
