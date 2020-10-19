@@ -107,17 +107,17 @@ const handleOnChange = (e) => {
       <a href="mailto:kyhar70@gmail.com" className="footer__link">Portfolio link</a>
       <ul className="social-list">
         <li className="social-list__item">
-          <a className="social-list__link" href="">
+          <a className="social-list__link" href="https://www.linkedin.com/in/martin-aleksandrov-322642195">
             <FaLinkedinIn />
           </a>
         </li>
         <li className="social-list__item">
-          <a className="social-list__link" href="">
+          <a className="social-list__link" href="mailto:kyhar70@gmail.com">
           <AiOutlineMail />
           </a>
         </li>
         <li className="social-list__item">
-          <a className="social-list__link" href="">
+          <a className="social-list__link" href="https://github.com/maleex2">
           <FaGithub />
           </a>
         </li>
