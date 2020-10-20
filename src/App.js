@@ -63,7 +63,7 @@ const handleOnChange = (e) => {
   return (
     <>
     <div class="leftside">
-        <ul>
+        <ul className="list">
           <li><Button  onClick={handleClick('right-end')}><CgProfile className="describtion"/></Button></li>
           <li><a href="https://www.linkedin.com/in/martin-aleksandrov-322642195/"><FaLinkedinIn /></a></li>
           <li ><a href="https://github.com/maleex2"><FaGithub/></a></li>
