@@ -26,7 +26,7 @@ body {
   z-index: 2;
 }
 
-ul{
+.list{
 color: white;
   padding: 0;
   display: block;
@@ -188,7 +188,7 @@ padding: 10px 35%;
   
   }
 
-  ul {
+  .list {
     width: 50px;
   }
   
