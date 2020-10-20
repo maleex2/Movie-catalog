@@ -28,6 +28,10 @@ body {
 ul{
 color: white;
   padding: 0;
+  display: block;
+ 
+    
+    
 }
 
 .leftside li{
@@ -169,6 +173,22 @@ margin: 1rem;
     width: 100%;
     margin-left: -0.5rem;
     font-size: 2rem;
+  }
+  .leftside li a{
+padding: 10px 35%;
+
+  }
+
+  .describtion{
+    width: 60%;
+  height: 60%;
+  padding: 10px 5px;
+  margin-left: -15px;
+  
+  }
+
+  ul {
+    width: 50px;
   }
   
 }
@@ -328,4 +348,3 @@ margin: 1rem;
 .social-list__item{
   margin: 0 .5em;
 }
-
