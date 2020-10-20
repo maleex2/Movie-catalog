@@ -123,6 +123,10 @@ h1 {
   margin-left: 2rem;
 }
 
+header{
+margin: 1rem; 
+}
+
 .search {
   border: 2px solid #efeff1;
   background-color: transparent;
