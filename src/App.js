@@ -104,7 +104,7 @@ const handleOnChange = (e) => {
       ))}
     </div>
     <footer className="footer">
-      <a href="mailto:kyhar70@gmail.com" className="footer__link">Portfolio link</a>
+      <a href="mailto:kyhar70@gmail.com" className="footer__link">Portfolio</a>
       <ul className="social-list">
         <li className="social-list__item">
           <a className="social-list__link" href="https://www.linkedin.com/in/martin-aleksandrov-322642195">
