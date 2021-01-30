@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import { FaLinkedinIn , FaGithub } from 'react-icons/fa';
 import {  AiOutlineProfile, AiOutlineMail} from 'react-icons/ai';
-import {  CgProfile} from 'react-icons/cg';
+import {  RiQuestionnaireLine } from "react-icons/ri";
+
 import Button from '@material-ui/core/Button';
 import Fade from '@material-ui/core/Fade';
 import Paper from '@material-ui/core/Paper';
@@ -64,7 +65,7 @@ const handleOnChange = (e) => {
     <>
     <div class="leftside">
         <ul className="list">
-          <li><Button  onClick={handleClick('right-end')}><CgProfile className="describtion"/></Button></li>
+          <li><Button  onClick={handleClick('right-end')}><RiQuestionnaireLine className="describtion"/></Button></li>
           <li><a href="https://www.linkedin.com/in/martin-aleksandrov-322642195/"><FaLinkedinIn /></a></li>
           <li ><a href="https://github.com/maleex2"><FaGithub/></a></li>
           <li><a href="https://github.com/maleex2"><AiOutlineProfile/></a></li>
