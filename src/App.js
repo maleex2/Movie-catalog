@@ -1,11 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import { FaLinkedinIn , FaGithub } from 'react-icons/fa';
 import {  AiOutlineProfile, AiOutlineMail} from 'react-icons/ai';
+import {  RiQuestionnaireLine } from "react-icons/ri";
 
 import Button from '@material-ui/core/Button';
-import Grid from '@material-ui/core/Grid';
-import Tooltip from '@material-ui/core/Tooltip';
-
+import Fade from '@material-ui/core/Fade';
+import Paper from '@material-ui/core/Paper';
+import Popper from '@material-ui/core/Popper';
+import Typography from '@material-ui/core/Typography';
 
 
 import Movie from './components/Movie'
@@ -21,10 +23,16 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState('');
   
-
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [open, setOpen] = useState(false);
+  const [placement, setPlacement] = useState();
   
 
-
+  const handleClick = (newPlacement) => (event) => {
+    setAnchorEl(event.currentTarget);
+    setOpen((prev) => placement !== newPlacement || !prev);
+    setPlacement(newPlacement);
+  };
  
 
   useEffect(() => {
@@ -55,36 +63,27 @@ const handleOnChange = (e) => {
 
   return (
     <>
-    <div className="leftside">
+    <div class="leftside">
         <ul className="list">
-          <Grid item container xs={6} alignItems="flex-start" direction="column">
-          <Grid item>
-            <Tooltip title="LinkedIn" placement="right">
-            
-              <Button  variant="contained" color="primary"><a href="https://www.linkedin.com/in/martin-aleksandrov-322642195/"><FaLinkedinIn /></a></Button>
-            </Tooltip>
-          </Grid>
-          <Grid item>
-            <Tooltip title="Github" placement="right">
-              <Button  variant="contained" color="primary"><a href="https://github.com/maleex2"><FaGithub/></a></Button>
-            </Tooltip>
-          </Grid>
-          <Grid item>
-            <Tooltip title="A simple app using OpenWeatherMap API to show current weather in a city The app is created with React, Material-UI and GSAP animations." placement="right">
-              <Button variant="contained" color="primary">
-             <FaGithub/>
-            </Button>
-            </Tooltip>
-          </Grid>
-          <Grid item>
-            <Tooltip title="CV" placement="right">
-              <Button variant="contained" color="primary"><a href="https://docs.google.com/uc?export=download&id=1120Ono5lmbKgC0WS2x6qA5gX608D0qLJ"><AiOutlineProfile/></a></Button>
-            </Tooltip>
-          </Grid>
-        </Grid>
+          <li><Button  onClick={handleClick('right-end')}><RiQuestionnaireLine className="describtion"/></Button></li>
+          <li><a href="https://www.linkedin.com/in/martin-aleksandrov-322642195/"><FaLinkedinIn /></a></li>
+          <li ><a href="https://github.com/maleex2"><FaGithub/></a></li>
+          <li><a href="https://github.com/maleex2"><AiOutlineProfile/></a></li>
         </ul>
       </div>
-      
+      <Popper open={open} anchorEl={anchorEl} placement={placement} transition>
+        {({ TransitionProps }) => (
+          <Fade {...TransitionProps} timeout={350}>
+            <Paper className="mg-l">
+              <Typography>
+                A simple app using OpenWeatherMap API <br></br>
+                to show current weather in a city. <br></br>
+                The app is created with React, Material-UI <br></br>and GSAP animations.
+              </Typography>
+            </Paper>
+          </Fade>
+        )}
+      </Popper>
     <div className="nav">
       <h1>The Movie Catalog</h1>
       <header>
