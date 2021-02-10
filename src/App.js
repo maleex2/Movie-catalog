@@ -9,7 +9,7 @@ import Popper from '@material-ui/core/Popper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Tooltip from '@material-ui/core/Tooltip';
-import { makeStyles } from '@material-ui/core/styles';
+
 
 
 import Movie from './components/Movie'
@@ -30,11 +30,7 @@ function App() {
   const [placement, setPlacement] = useState();
   
 
-  const handleClick = (newPlacement) => (event) => {
-    setAnchorEl(event.currentTarget);
-    setOpen((prev) => placement !== newPlacement || !prev);
-    setPlacement(newPlacement);
-  };
+
  
 
   useEffect(() => {
