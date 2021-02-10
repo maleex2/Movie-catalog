@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { FaLinkedinIn , FaGithub } from 'react-icons/fa';
 import {  AiOutlineProfile, AiOutlineMail} from 'react-icons/ai';
-import {  RiQuestionnaireLine } from "react-icons/ri";
 
 import Button from '@material-ui/core/Button';
 import Fade from '@material-ui/core/Fade';
@@ -16,9 +15,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Movie from './components/Movie'
 
 const FEATURED_API = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=0aa562e5199c95e58dfcd1a3ba55ef68&page=1";
-
-
-
 const SEARCH_API = "https://api.themoviedb.org/3/search/movie?&api_key=0aa562e5199c95e58dfcd1a3ba55ef68&query="
 
 
@@ -31,13 +27,7 @@ function App() {
   const [placement, setPlacement] = useState();
   
 
-  const handleClick = (newPlacement) => (event) => {
-    setAnchorEl(event.currentTarget);
-    setOpen((prev) => placement !== newPlacement || !prev);
-    setPlacement(newPlacement);
-  };
- 
-  const classes = useStyles();
+
 
   useEffect(() => {
     fetch(FEATURED_API).then(res => res.json())
