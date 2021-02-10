@@ -22,9 +22,7 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState('');
   
-  const [anchorEl, setAnchorEl] = useState(null);
-  const [open, setOpen] = useState(false);
-  const [placement, setPlacement] = useState();
+
   
 
 
@@ -59,6 +57,7 @@ const handleOnChange = (e) => {
     <>
     <div class="leftside">
         <ul className="list">
+    <div className={classes.root}>
           <Grid item container xs={6} alignItems="flex-start" direction="column">
           <Grid item>
             <Tooltip title="LinkedIn" placement="right">
@@ -137,16 +136,13 @@ and GSAP animations." placement="right">
           <FaGithub />
           </a>
         </li>
+<div>
       </ul>
     </footer>
   </>
   );
 }
 
-const useStyles = makeStyles({
-  root: {
-    width: 500,
-  },
-});
+
 
 export default App;
