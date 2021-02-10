@@ -54,7 +54,7 @@ const handleOnChange = (e) => {
 
   return (
     <>
-    <div className="leftside {classes.root}">
+    <div class="leftside">
         <ul className="list">
           <Grid item container xs={6} alignItems="flex-start" direction="column">
           <Grid item>
