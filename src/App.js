@@ -65,10 +65,21 @@ const handleOnChange = (e) => {
     <>
     <div class="leftside">
         <ul className="list">
-          <li><Button  onClick={handleClick('right-end')}><RiQuestionnaireLine className="describtion"/></Button></li>
-          <li><a href="https://www.linkedin.com/in/martin-aleksandrov-322642195/"><FaLinkedinIn /></a></li>
-          <li ><a href="https://github.com/maleex2"><FaGithub/></a></li>
-          <li><a href="https://github.com/maleex2"><AiOutlineProfile/></a></li>
+          <li><nav><Tooltip title="LinkedIn" placement="right">
+            
+              <Button  variant="contained" color="primary"><a href="https://www.linkedin.com/in/martin-aleksandrov-322642195/"><FaLinkedinIn /></a></Button>
+            </Tooltip></Button></li></nav>
+          <li><nav><Tooltip title="Github" placement="right">
+              <Button  variant="contained" color="primary"><a href="https://github.com/maleex2"><FaGithub/></a></Button>
+            </Tooltip></nav></li>
+          <li><nav><Tooltip title="A simple app using OpenWeatherMap API to show current weather in a city The app is created with React, Material-UI and GSAP animations." placement="right">
+              <Button variant="contained" color="primary">
+             <FaGithub/>
+            </Button>
+            </Tooltip></nav></li>
+          <li><nav><Tooltip title="CV" placement="right">
+              <Button variant="contained" color="primary"><a href="https://docs.google.com/uc?export=download&id=1120Ono5lmbKgC0WS2x6qA5gX608D0qLJ"><AiOutlineProfile/></a></Button>
+            </Tooltip></nav></li>
         </ul>
       </div>
       <Popper open={open} anchorEl={anchorEl} placement={placement} transition>
@@ -76,9 +87,9 @@ const handleOnChange = (e) => {
           <Fade {...TransitionProps} timeout={350}>
             <Paper className="mg-l">
               <Typography>
-                A simple app using OpenWeatherMap API <br></br>
-                to show current weather in a city. <br></br>
-                The app is created with React, Material-UI <br></br>and GSAP animations.
+                "A simple app using OpenWeatherMap API to"<br><br>
+                " show current weather in a city The app is " <br><br>
+                "created with React, Material-UI and GSAP animations."
               </Typography>
             </Paper>
           </Fade>
