@@ -89,7 +89,7 @@ const handleOnChange = (e) => {
 to show current weather in a city.
 The app is created with React, Material-UI
 and GSAP animations." placement="right">
-              <Button><FaGithub/></a></Button>
+              <Button><FaGithub/></Button>
             </Tooltip>
           </Grid>
           <Grid item>
