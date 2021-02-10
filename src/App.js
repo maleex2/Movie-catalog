@@ -55,9 +55,8 @@ const handleOnChange = (e) => {
 
   return (
     <>
-    <div class="leftside">
+    <div className="leftside {classes.root}">
         <ul className="list">
-        <div className={classes.root}>
           <Grid item container xs={6} alignItems="flex-start" direction="column">
           <Grid item>
             <Tooltip title="LinkedIn" placement="right">
@@ -83,7 +82,6 @@ and GSAP animations." placement="right">
             </Tooltip>
           </Grid>
         </Grid>
-        </div>
         </ul>
       </div>
       <Popper open={open} anchorEl={anchorEl} placement={placement} transition>
