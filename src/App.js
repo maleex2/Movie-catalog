@@ -3,10 +3,6 @@ import { FaLinkedinIn , FaGithub } from 'react-icons/fa';
 import {  AiOutlineProfile, AiOutlineMail} from 'react-icons/ai';
 
 import Button from '@material-ui/core/Button';
-import Fade from '@material-ui/core/Fade';
-
-
-import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Tooltip from '@material-ui/core/Tooltip';
 
