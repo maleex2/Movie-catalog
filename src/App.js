@@ -138,6 +138,7 @@ and GSAP animations." placement="right">
         </li>
 <div>
       </ul>
+<div>
     </footer>
   </>
   );
