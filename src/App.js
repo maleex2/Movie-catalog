@@ -68,7 +68,7 @@ const handleOnChange = (e) => {
           <li><nav><Tooltip title="LinkedIn" placement="right">
             
               <Button  variant="contained" color="primary"><a href="https://www.linkedin.com/in/martin-aleksandrov-322642195/"><FaLinkedinIn /></a></Button>
-            </Tooltip></Button></li></nav>
+            </Tooltip></Button></nav></li>
           <li><nav><Tooltip title="Github" placement="right">
               <Button  variant="contained" color="primary"><a href="https://github.com/maleex2"><FaGithub/></a></Button>
             </Tooltip></nav></li>
