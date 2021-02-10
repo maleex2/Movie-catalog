@@ -66,15 +66,11 @@ const handleOnChange = (e) => {
           </Grid>
           <Grid item>
             <Tooltip title="Github" placement="right">
-              <Button variant="contained" color="primary" href="#contained-buttons">
-               Link
-              </Button>
               <Button  variant="contained" color="primary"><a href="https://github.com/maleex2"><FaGithub/></a></Button>
             </Tooltip>
           </Grid>
           <Grid item>
             <Tooltip title="A simple app using OpenWeatherMap API to show current weather in a city The app is created with React, Material-UI and GSAP animations." placement="right">
-              <Button></Button>
               <Button variant="contained" color="primary">
              <FaGithub/>
             </Button>
