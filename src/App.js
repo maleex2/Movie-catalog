@@ -69,11 +69,7 @@ const handleOnChange = (e) => {
     <>
     <div class="leftside">
         <ul className="list">
-          <li><Button  onClick={handleClick('right-end')}><RiQuestionnaireLine className="describtion"/></Button></li>
-          <li><a href="https://www.linkedin.com/in/martin-aleksandrov-322642195/"><FaLinkedinIn /></a></li>
-          <li ><a href="https://github.com/maleex2"><FaGithub/></a></li>
-          <li><a href="https://github.com/maleex2"><AiOutlineProfile/></a></li>
-          <Grid item container xs={6} alignItems="flex-end" direction="column">
+          <Grid item container xs={6} alignItems="flex-start" direction="column">
           <Grid item>
             <Tooltip title="LinkedIn" placement="right">
               <Button><a href="https://www.linkedin.com/in/martin-aleksandrov-322642195/"><FaLinkedinIn /></a></Button>
@@ -98,7 +94,6 @@ and GSAP animations." placement="right">
             </Tooltip>
           </Grid>
         </Grid>
-      </Grid> 
         </ul>
       </div>
       <Popper open={open} anchorEl={anchorEl} placement={placement} transition>
