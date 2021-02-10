@@ -70,10 +70,7 @@ const handleOnChange = (e) => {
             </Tooltip>
           </Grid>
           <Grid item>
-            <Tooltip title="A simple app using OpenWeatherMap API
-to show current weather in a city.
-The app is created with React, Material-UI
-and GSAP animations." placement="right">
+            <Tooltip title="A simple app using OpenWeatherMap API to show current weather in a city The app is created with React, Material-UI and GSAP animations." placement="right">
               <Button><FaGithub/></Button>
             </Tooltip>
           </Grid>
