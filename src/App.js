@@ -57,7 +57,7 @@ const handleOnChange = (e) => {
     <>
     <div class="leftside">
         <ul className="list">
-    <div className={classes.root}>
+        <div className={classes.root}>
           <Grid item container xs={6} alignItems="flex-start" direction="column">
           <Grid item>
             <Tooltip title="LinkedIn" placement="right">
@@ -137,9 +137,9 @@ and GSAP animations." placement="right">
           <FaGithub />
           </a>
         </li>
-<div>
+      </div>
       </ul>
-<div>
+      </div>
     </footer>
   </>
   );
