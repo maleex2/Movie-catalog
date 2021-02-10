@@ -45,12 +45,12 @@ color: white;
 
 }
 
-.leftside li i{
+.leftside li nav{
   display:block;
   
 }
 
-.leftside li a {
+.leftside li button {
   text-decoration: none;
   color: inherit;
   display:inline-block;
