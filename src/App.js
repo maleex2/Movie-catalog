@@ -11,9 +11,13 @@ import Grid from '@material-ui/core/Grid';
 import Tooltip from '@material-ui/core/Tooltip';
 import { makeStyles } from '@material-ui/core/styles';
 
+
 import Movie from './components/Movie'
 
 const FEATURED_API = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=0aa562e5199c95e58dfcd1a3ba55ef68&page=1";
+
+
+
 const SEARCH_API = "https://api.themoviedb.org/3/search/movie?&api_key=0aa562e5199c95e58dfcd1a3ba55ef68&query="
 
 
@@ -21,12 +25,17 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState('');
   
-
   const [anchorEl, setAnchorEl] = useState(null);
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState();
+  
 
-
+  const handleClick = (newPlacement) => (event) => {
+    setAnchorEl(event.currentTarget);
+    setOpen((prev) => placement !== newPlacement || !prev);
+    setPlacement(newPlacement);
+  };
+ 
 
   useEffect(() => {
     fetch(FEATURED_API).then(res => res.json())
@@ -132,19 +141,11 @@ const handleOnChange = (e) => {
           <a className="social-list__link" href="https://github.com/maleex2">
           <FaGithub />
           </a>
-        </li> 
+        </li>
       </ul>
     </footer>
   </>
   );
 }
-
-const useStyles = makeStyles({
-  root: {
-    width: 500,
-  },
-});
-
-
 
 export default App;
