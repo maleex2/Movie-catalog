@@ -54,7 +54,7 @@ const handleOnChange = (e) => {
 
   return (
     <>
-    <div class="leftside">
+    <div className="leftside">
         <ul className="list">
           <Grid item container xs={6} alignItems="flex-start" direction="column">
           <Grid item>
@@ -133,10 +133,8 @@ and GSAP animations." placement="right">
           <a className="social-list__link" href="https://github.com/maleex2">
           <FaGithub />
           </a>
-        </li>
-      </div>
+        </li> 
       </ul>
-      </div>
     </footer>
   </>
   );
