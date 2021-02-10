@@ -83,6 +83,7 @@ and GSAP animations." placement="right">
             </Tooltip>
           </Grid>
         </Grid>
+        </div>
         </ul>
       </div>
       <Popper open={open} anchorEl={anchorEl} placement={placement} transition>
