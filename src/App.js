@@ -8,6 +8,9 @@ import Fade from '@material-ui/core/Fade';
 import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
+import Tooltip from '@material-ui/core/Tooltip';
+import { makeStyles } from '@material-ui/core/styles';
 
 
 import Movie from './components/Movie'
@@ -34,6 +37,7 @@ function App() {
     setPlacement(newPlacement);
   };
  
+  const classes = useStyles();
 
   useEffect(() => {
     fetch(FEATURED_API).then(res => res.json())
@@ -69,6 +73,32 @@ const handleOnChange = (e) => {
           <li><a href="https://www.linkedin.com/in/martin-aleksandrov-322642195/"><FaLinkedinIn /></a></li>
           <li ><a href="https://github.com/maleex2"><FaGithub/></a></li>
           <li><a href="https://github.com/maleex2"><AiOutlineProfile/></a></li>
+          <Grid item container xs={6} alignItems="flex-end" direction="column">
+          <Grid item>
+            <Tooltip title="LinkedIn" placement="right">
+              <Button><a href="https://www.linkedin.com/in/martin-aleksandrov-322642195/"><FaLinkedinIn /></a></Button>
+            </Tooltip>
+          </Grid>
+          <Grid item>
+            <Tooltip title="Github" placement="right">
+              <Button><a href="https://github.com/maleex2"><FaGithub/></a></Button>
+            </Tooltip>
+          </Grid>
+          <Grid item>
+            <Tooltip title="A simple app using OpenWeatherMap API
+to show current weather in a city.
+The app is created with React, Material-UI
+and GSAP animations." placement="right">
+              <Button><FaGithub/></a></Button>
+            </Tooltip>
+          </Grid>
+          <Grid item>
+            <Tooltip title="CV" placement="right">
+              <Button><a href="https://docs.google.com/uc?export=download&id=1120Ono5lmbKgC0WS2x6qA5gX608D0qLJ"><AiOutlineProfile/></a></Button>
+            </Tooltip>
+          </Grid>
+        </Grid>
+      </Grid> 
         </ul>
       </div>
       <Popper open={open} anchorEl={anchorEl} placement={placement} transition>
@@ -127,5 +157,11 @@ const handleOnChange = (e) => {
   </>
   );
 }
+
+const useStyles = makeStyles({
+  root: {
+    width: 500,
+  },
+});
 
 export default App;
