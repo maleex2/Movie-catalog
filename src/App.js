@@ -4,8 +4,8 @@ import {  AiOutlineProfile, AiOutlineMail} from 'react-icons/ai';
 
 import Button from '@material-ui/core/Button';
 import Fade from '@material-ui/core/Fade';
-import Paper from '@material-ui/core/Paper';
-import Popper from '@material-ui/core/Popper';
+
+
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Tooltip from '@material-ui/core/Tooltip';
@@ -25,9 +25,7 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState('');
   
-  const [anchorEl, setAnchorEl] = useState(null);
-  const [open, setOpen] = useState(false);
-  const [placement, setPlacement] = useState();
+
   
 
 
@@ -87,19 +85,7 @@ const handleOnChange = (e) => {
         </Grid>
         </ul>
       </div>
-      <Popper open={open} anchorEl={anchorEl} placement={placement} transition>
-        {({ TransitionProps }) => (
-          <Fade {...TransitionProps} timeout={350}>
-            <Paper className="mg-l">
-              <Typography>
-                A simple app using OpenWeatherMap API <br></br>
-                to show current weather in a city. <br></br>
-                The app is created with React, Material-UI <br></br>and GSAP animations.
-              </Typography>
-            </Paper>
-          </Fade>
-        )}
-      </Popper>
+      
     <div className="nav">
       <h1>The Movie Catalog</h1>
       <header>
