@@ -22,9 +22,17 @@ function App() {
   const [search, setSearch] = useState('');
   
 
-  
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [open, setOpen] = useState(false);
+  const [placement, setPlacement] = useState();
 
+  const handleClick = (newPlacement) => (event) => {
+    setAnchorEl(event.currentTarget);
+    setOpen((prev) => placement !== newPlacement || !prev);
+    setPlacement(newPlacement);
+  };
 
+  const classes = useStyles();
 
   useEffect(() => {
     fetch(FEATURED_API).then(res => res.json())
