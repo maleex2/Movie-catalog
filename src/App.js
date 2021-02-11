@@ -8,6 +8,7 @@ import Fade from '@material-ui/core/Fade';
 import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';
 import Typography from '@material-ui/core/Typography';
+import Tooltip from '@material-ui/core/Tooltip';
 
 
 import Movie from './components/Movie'
