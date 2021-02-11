@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { FaLinkedinIn , FaGithub } from 'react-icons/fa';
 import {  AiOutlineProfile, AiOutlineMail} from 'react-icons/ai';
-import {  RiQuestionnaireLine } from "react-icons/ri";
 
 import Button from '@material-ui/core/Button';
 import Fade from '@material-ui/core/Fade';
@@ -23,17 +22,7 @@ const SEARCH_API = "https://api.themoviedb.org/3/search/movie?&api_key=0aa562e51
 function App() {
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState('');
-  
-  const [anchorEl, setAnchorEl] = useState(null);
-  const [open, setOpen] = useState(false);
-  const [placement, setPlacement] = useState();
-  
 
-  const handleClick = (newPlacement) => (event) => {
-    setAnchorEl(event.currentTarget);
-    setOpen((prev) => placement !== newPlacement || !prev);
-    setPlacement(newPlacement);
-  };
  
 
   useEffect(() => {
@@ -83,19 +72,7 @@ const handleOnChange = (e) => {
             </Tooltip></nav></li>
         </ul>
       </div>
-      <Popper open={open} anchorEl={anchorEl} placement={placement} transition>
-        {({ TransitionProps }) => (
-          <Fade {...TransitionProps} timeout={350}>
-            <Paper className="mg-l">
-              <Typography>
-                "A simple app using OpenWeatherMap API to".<br />.<br />
-                " show current weather in a city The app is " .<br />.<br />
-                "created with React, Material-UI and GSAP animations."
-              </Typography>
-            </Paper>
-          </Fade>
-        )}
-      </Popper>
+      
     <div className="nav">
       <h1>The Movie Catalog</h1>
       <header>
