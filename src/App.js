@@ -87,8 +87,8 @@ const handleOnChange = (e) => {
           <Fade {...TransitionProps} timeout={350}>
             <Paper className="mg-l">
               <Typography>
-                "A simple app using OpenWeatherMap API to"<br><br>
-                " show current weather in a city The app is " <br><br>
+                "A simple app using OpenWeatherMap API to".<br />.<br />
+                " show current weather in a city The app is " .<br />.<br />
                 "created with React, Material-UI and GSAP animations."
               </Typography>
             </Paper>
