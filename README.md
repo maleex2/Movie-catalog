@@ -1,6 +1,6 @@
 # The Movie Catalog
 
-## [Live Demo](https://tender-neumann-cd156a.netlify.app/).
+## [Live Demo](https://move-catalog.netlify.app/).
 
 ###### An app using [The Movie Database](https://www.themoviedb.org/)'s API to search and browse milions of movies, TV shows and celebrities.
 ###### The app is made with React, Node, Material-UI and hooks
